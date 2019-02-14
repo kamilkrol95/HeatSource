@@ -1,0 +1,7 @@
+<launch>
+	<node name="vision_viewer" pkg="image_view" type="image_view" output="screen">
+		<remap from="image" to="/vision_camera/image_raw" />
+		<param name="image_transport" value="raw" />
+		<param name="autosize" value="true" />
+	</node>
+</launch>

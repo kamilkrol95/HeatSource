@@ -1,0 +1,8 @@
+<launch>
+	<node name="viewer_asus" pkg="image_view" type="image_view" output="screen">
+		<!--remap from="image" to="/vision_camera_asus/image_raw" /-->
+		<remap from="image" to="image_converter/output_video"/>
+		<param name="image_transport" value="raw" />
+		<param name="autosize" value="false" />
+	</node>
+</launch>

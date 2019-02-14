@@ -1,0 +1,8 @@
+<launch>
+	<node name="heat_source" pkg="heat_source" type="heat_source" output ="screen">
+	
+		<remap from="in" to="/heat_source/output_video"/>
+		<param name="image_transport" value="raw" />
+		
+	</node>
+</launch>

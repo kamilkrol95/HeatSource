@@ -1,0 +1,12 @@
+<launch>
+	<node name="thermal_camera" pkg="usb_cam" type="usb_cam_node" output="screen">
+	<param name="video_device" value="/dev/video1" />
+	<param name="pixel_format" value="rgb24" />
+	<param name="image_transport" value="raw" />
+	<param name="image_width" value="80" />
+	<param name="image_height" value="60" />
+	<param name="camera_name" value="thermal_cam"/>
+	<param name="autofocus" value="true" />
+</node>
+
+</launch>
